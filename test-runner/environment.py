@@ -160,6 +160,10 @@ def setupExecutionEnvironment():
         else:
             return uri + " (some other container)"
 
+    for object_name in runtime_config.vars():
+        obj = runtime_config.get_attr(object_name)
+        if obj.get_attr('type')
+
 
     if language == "ppdirect":
         adapters.add_direct_python_sdk_adapter(
